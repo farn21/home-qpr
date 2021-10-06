@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Navbar
+   ---
+   A container for navigational elements
+   ========================================================================== */
+
+.c-navbar {
+  width: 100%;
+  height: $g-bar-size-regular;
+}
+
+.c-navbar--auto {
+  height: auto;
+}
+
+
+.c-navbar--fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: $g-c-global-navbar-z;
+  border-bottom: 1px solid $color-gray-150;
+}
+
+/* Skins
+   ========================================================================== */
+
+.c-navbar--white {
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+  }
+}
+
+.c-navbar--alt {
+  background: $color-gray-50;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
+}
+
+/* Bordered equivalents
+   ========================================================================== */
+
+.c-navbar--bordered-top {
+  border-top: 0.1rem solid $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+}
+
+.c-navbar--bordered-bottom {
+  border-bottom: 0.1rem solid $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+}
+
+/* Sizes
+   ========================================================================== */
+
+.c-navbar--small {
+  height: $g-bar-size-medium;
+}

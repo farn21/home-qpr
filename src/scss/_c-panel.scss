@@ -1,0 +1,85 @@
+/* ==========================================================================
+  Panel
+   ========================================================================== */
+
+/* Variables
+   ========================================================================== */
+
+$c-panel-padding-all: 2.4rem !default;
+$c-panel-padding-horizontal: 2.4rem !default;
+$c-panel-padding-vertical: 2.4rem !default;
+$c-panel-border-color: $color-gray-150 !default;
+$c-panel-border-radius: 0.4rem !default;
+
+/* Standard component construction
+   ========================================================================== */
+
+.c-panel {
+  background-color: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+  }
+  border-radius: $c-panel-border-radius;
+  border: .1rem solid $c-panel-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+}
+
+.c-panel__body {
+  padding: $c-panel-padding-all;
+}
+
+.c-panel__body + .c-panel__body {
+  border-top: .1rem solid $c-panel-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+}
+
+.c-panel__header {
+  display: flex;
+  align-items: center;
+  height: 5.6rem;
+  padding: 0 $c-panel-padding-horizontal;
+  background:  $color-gray-50;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
+  border-radius: 0.4rem 0.4rem 0 0;
+  border-bottom: .1rem solid $c-panel-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+}
+
+.c-panel__title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* When panels meet tables
+   ========================================================================== */
+
+// Adjust standard tables in panels so cell texts align with panel titles/buttons
+.c-panel .c-table tbody td:first-child {
+  padding-left: 2.4rem;
+}
+
+.c-panel .c-table tbody td:last-child {
+  padding-right: 2.4rem;
+}
+
+/* Panel variants
+   ========================================================================== */
+
+.c-panel--large {
+  .c-panel__header {
+    padding: 0 4rem;
+    height: 7.2rem;
+  }
+
+  .c-panel__body {
+    padding: 4rem;
+  }
+}

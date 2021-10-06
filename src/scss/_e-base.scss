@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Elements: Base
+   ---
+   Only use elements without selectors when really necessary.
+   ========================================================================== */
+
+$base-line-height: 1.5 !default;
+
+/* Elements
+   ========================================================================== */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 54.16%; // 13px
+  @media (min-width: $g-bp3) {
+    font-size: 58.33%; // 14px
+  }
+  @media (min-width: $g-bp4) {
+    font-size: 62.5%; // Base 10
+  }
+}
+
+body {
+  font-family: $g-base-font-family;
+  font-size: $g-base-font-size;
+  line-height: $base-line-height;
+  -webkit-overflow-scrolling: touch;
+
+  background: #FFF;
+  color: $color-text;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+    color: $color-gray-300;
+  }
+}
+
+label {
+  color: $color-gray-800;
+  @media (prefers-color-scheme: dark) {
+    color: $color-gray-200;
+  }
+}
+
+strong {
+  font-weight: 700;
+  color: $color-gray-800;
+  @media (prefers-color-scheme: dark) {
+    color: $color-gray-100;
+  }
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: $g-headings-font-weight;
+}
+
+/* Required fields
+   ========================================================================== */
+
+abbr[title] {
+  text-decoration: none;
+  opacity: 0.5;
+}

@@ -1,0 +1,306 @@
+@use "sass:math";
+
+/* ==========================================================================
+  Table
+   ========================================================================== */
+
+/* Variables
+   ========================================================================== */
+
+$c-table-background-color: #FFF !default;
+$c-table-border-color: $color-gray-150 !default;
+$c-table-row-odd-color: $color-gray-50 !default;
+$c-table-row-selected-color: #FFF !default;
+$c-table-row-selected-bg: $color-primary !default;
+
+/* Component
+   ========================================================================== */
+
+.c-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    text-align: left;
+  }
+
+  td,
+  th {
+    text-align: left;
+    padding: 0.8rem 0;
+    vertical-align: top;
+    position: relative;
+  }
+
+  th {
+    font-weight: 500;
+  }
+
+  a {
+    color: $color-primary;
+  }
+
+}
+
+.c-table--styled {
+
+  th {
+    font-weight: $g-headings-font-weight;
+    border-radius: 0.4rem 0.4rem 0 0;
+    border-bottom: .2rem solid $c-table-border-color;
+    @media (prefers-color-scheme: dark) {
+      color: #FFF;
+      border-color: $color-gray-700;
+    }
+    vertical-align: top;
+  }
+
+  // Styles for table row headers
+  tbody th {
+    background: none;
+    vertical-align: center;
+    height: inherit;
+  }
+
+  tbody tr:last-child th {
+    border: none;
+  }
+
+  td {
+    border-bottom: 0.1rem solid $c-table-border-color;
+    @media (prefers-color-scheme: dark) {
+      border-color: $color-gray-800;
+    }
+  }
+
+  tr:last-child {
+    td {
+      border: none;
+    }
+  }
+
+  td,
+  th {
+    text-align: left;
+    padding: 1.6rem;
+    position: relative;
+  }
+
+  td .c-button,
+  th .c-button {
+    margin-bottom: -0.8rem;
+    margin-top: -0.8rem;
+  }
+
+}
+
+.c-table--bordered {
+  border: .1rem solid $c-table-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
+  border-radius: 0.3rem;
+}
+
+.c-table--nowrap {
+  th,
+  td {
+    white-space: nowrap;
+  }
+}
+
+.c-table--align-middle {
+  td {
+    vertical-align: middle;
+  }
+}
+
+.c-table__row--selected {
+  td {
+    background-color: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-800;
+    }
+    border-color: $color-gray-300;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-600;
+    }
+  }
+
+}
+
+.c-table--striped {
+  tbody tr:nth-child(odd) {
+    background: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: mix($color-gray-850, $color-gray-900);
+    }
+  }
+}
+
+.c-table--no-margin {
+  margin: 0;
+}
+
+.c-table--align-middle {
+  td {
+    vertical-align: middle;
+  }
+}
+
+.c-table__actions {
+  a {
+    float: right;
+  }
+}
+
+.c-table--horizontal {
+  th {
+    width: 18rem;
+  }
+}
+
+/* Invisible table structure
+   ========================================================================== */
+
+.c-table.c-table--invisible {
+  border: 0;
+  width: 100%;
+
+  tr th,
+  tr td {
+    border: 0;
+    padding-left: 0;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+}
+
+/* Table column widths
+   ========================================================================== */
+
+$tableColCount: 16;
+$i: 1;
+
+@while $i < $tableColCount {
+  .o-table-col-#{$i} {
+    width: #{math.div($i, $tableColCount) * 100%};
+  }
+
+  $i: $i + 1;
+}
+
+/* Untable a table
+   ========================================================================== */
+
+.c-table--untable {
+  tr {
+    display: block;
+    th {
+      display: block;
+    }
+    td {
+      display: block;
+    }
+  }
+  @media (min-width: $g-bp2) {
+    tr {
+      display: table-row;
+      th {
+        display: table-cell;
+      }
+      td {
+        display: table-cell;
+      }
+    }
+  }
+}
+
+/* Responsive table
+   Adapted from Bootstrap 4
+   ========================================================================== */
+
+.c-table-responsive {
+
+  border: .1rem solid $c-table-border-color;
+  border-radius: 0.3rem;
+
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
+
+  // Prevent double border on horizontal scroll due to use of `display: block;`
+  > .c-table--bordered {
+    border: 0;
+  }
+}
+
+/* Card + table context
+   ========================================================================== */
+
+.c-panel .c-table {
+  background: #FFF;
+  tr td {
+    padding: 1.6rem;
+  }
+  tr td:first-child {
+    padding-left: 2.4rem;
+  }
+  tr td:last-child {
+    padding-right: 2.4rem;
+  }
+  tr th:first-child {
+    padding-left: 2.4rem;
+  }
+  tr th:last-child {
+    padding-right: 2.4rem;
+  }
+}
+
+/* Indented table
+   ========================================================================== */
+
+.c-table--indented {
+  td:first-child {
+    padding-left: 2.4rem;
+  }
+  td:last-child {
+    padding-right: 2.4rem;
+  }
+  th:first-child {
+    padding-left: 2.4rem;
+  }
+  th:last-child {
+    padding-right: 2.4rem;
+  }
+}
+
+/* Specific table cell classes
+   ========================================================================== */
+
+.c-table .c-table-cell.c-table-cell--checkbox {
+  width: 1px;
+}
+
+.c-table-cell--checkbox .c-checkbox {
+  display: inline-flex;
+}
+
+.c-table-cell--checkbox label {
+  width: auto;
+}
+
+.c-table .c-table-cell.c-table-cell--minimize-width {
+  width: 0;
+}
+
+.c-table .c-table-cell.c-table-cell--no-padding-sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c-table .c-table-cell__inner.c-table-cell__inner--float-right {
+  float: right;
+}

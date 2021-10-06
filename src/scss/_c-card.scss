@@ -1,0 +1,46 @@
+/* ==========================================================================
+  Card
+ ========================================================================== */
+
+/* Variables
+   ========================================================================== */
+
+$c-card-border-radius: 0.3rem !default;
+
+/* Component
+   ========================================================================== */
+
+.c-card {
+  display: block;
+  position: relative;
+  border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
+  border-radius: $c-card-border-radius;
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
+}
+
+.c-card--interactive {
+  border-color: $color-gray-400;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-600;
+  }
+  &:hover {
+    background: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-800;
+    }
+  }
+}
+
+.c-card__inner {
+  padding: 2.4rem;
+}
+
+.c-card__inner {
+  display: block;
+}

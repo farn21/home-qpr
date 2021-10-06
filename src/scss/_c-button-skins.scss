@@ -1,0 +1,217 @@
+/* ==========================================================================
+  Button Skins
+  ---
+  Rules of this file: you CAN'T touch the box model here, just colors.
+   ========================================================================== */
+
+.c-button {
+  transition: 0.18s background ease-in, 0.18s border ease-in, 0.18s color ease-in;
+}
+
+/* Primary
+   ========================================================================== */
+
+.c-button.c-button--primary {
+  border: .1rem solid $color-blue-600;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-blue-400;
+  }
+  
+  background: $color-blue-600;
+  @media (prefers-color-scheme: dark) {
+    background: $color-blue-400;
+  }
+  color: #FFF;
+
+  svg * {
+    fill: #FFF;
+  }
+
+  &:active,
+  &:hover,
+  &.c-button--active,
+  &:active:focus,
+  &.c-button--active:focus {
+    background: $color-blue-400;
+    border-color: $color-blue-400;
+    @media (prefers-color-scheme: dark) {
+      background: $color-blue-300;
+      border-color: $color-blue-300;
+    }
+  }
+
+}
+
+/* Secondary
+   ========================================================================== */
+
+.c-button.c-button--secondary {
+
+  background: none;
+  border: .1rem solid $color-blue-600;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-blue-400;
+  }
+
+  color: $color-blue-600;
+  @media (prefers-color-scheme: dark) {
+    color: $color-blue-400;
+  }
+
+  svg * {
+    fill: $color-blue-600;
+    @media (prefers-color-scheme: dark) {
+      fill: $color-blue-400;
+    }
+  }
+
+  &:active,
+  &:hover,
+  &.c-button--active,
+  &:active:focus,
+  &.c-button--active:focus {
+    background: $color-blue-200;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-800;
+    }
+  }
+
+}
+
+
+/* Tertiary
+   ========================================================================== */
+
+.c-button.c-button--tertiary {
+
+  border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
+  background: #fff;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
+
+  color: $color-gray-700;
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+  }
+
+  svg * {
+    fill: $color-gray-700;
+  }
+
+  &:active,
+  &:hover,
+  &.c-button--active,
+  &:active:focus,
+  &.c-button--active:focus {
+    background: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-700;
+      border-color: $color-gray-700;
+    }
+  }
+
+}
+
+/* Danger
+   ========================================================================== */
+
+.c-button.c-button--danger {
+  
+  border: .1rem solid $color-red-500;
+  background: $color-red-500;
+  color: #FFF;
+
+  &:active,
+  &:hover,
+  &.c-button--active,
+  &:active:focus,
+  &.c-button--active:focus {
+    background: darken($color-red-500, 10%);
+  }
+
+}
+
+/* Danger hover
+   ========================================================================== */
+
+.c-button.c-button--danger-hover {
+  border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
+  background: #fff;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
+  color: $color-gray-700;
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+  }
+
+  &:active,
+  &:hover,
+  &.c-button--active,
+  &:active:focus,
+  &.c-button--active:focus {
+    background: $color-red-500;
+    color: #FFF;
+    border-color: $color-red-500;
+    transition: background 0.18s ease-in-out, color 0.18s ease-in-out;
+    svg * {
+      fill: #FFF;
+    }
+  }
+
+}
+
+/* Borderless
+   ========================================================================== */
+
+.c-button.c-button--borderless {
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+  }
+
+  background: none;
+  border: .1rem solid transparent;
+  &:active,
+  &:hover,
+  &.c-button--active,
+  &:active:focus,
+  &.c-button--active:focus {
+    border-color: $color-gray-200;
+    @media (prefers-color-scheme: dark) {
+      border-color: $color-gray-700;
+    }
+    
+  }
+
+}
+
+/* Shared disabled state for all buttons
+   ========================================================================== */
+
+.c-button.c-button--primary,
+.c-button.c-button--secondary,
+.c-button.c-button--tertiary,
+.c-button.c-button--borderless,
+.c-button.c-button--danger,
+.c-button.c-button--danger-hover {
+  &:disabled,
+  &.c-button--disabled {
+    background: $color-gray-50;
+    color: $color-gray-200;
+    pointer-events: none;
+    border: none;
+    
+    @media (prefers-color-scheme: dark) {
+      color: $color-gray-700;
+      background: $color-gray-800;
+    }
+  }
+}
