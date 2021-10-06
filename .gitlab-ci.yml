@@ -1,0 +1,19 @@
+image: node:14-alpine
+
+stages:
+  - pages
+
+before_script:
+  - yarn
+
+cache:
+  paths:
+    - node_modules
+
+pages:
+  stage: pages
+  script:
+    - yarn run build
+  artifacts:
+    paths:
+      - public
