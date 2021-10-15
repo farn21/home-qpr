@@ -16,4 +16,4 @@ pages:
     - yarn run build
   artifacts:
     paths:
-      - public
+      - build
