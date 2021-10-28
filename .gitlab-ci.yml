@@ -14,8 +14,6 @@ pages:
   stage: pages
   script:
     - yarn run build
-    - mkdir public
-    - cp -r build public
   artifacts:
     paths:
       - public
