@@ -1,19 +1,21 @@
-image: node:14-alpine
-
-stages:
-  - pages
+image: "node:lts-alpine"
 
 before_script:
-  - yarn
+  - npm install
 
+# These folders are cached between builds
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
 cache:
+  key: ${CI_COMMIT_REF_SLUG}
   paths:
-    - node_modules
+    - node_modules/
+    # Enables git-lab CI caching. Both .cache and public must be cached, otherwise builds will fail.
+    - .cache/
+    - public/
 
 pages:
-  stage: pages
   script:
-    - yarn run build
+    - npm run build
   artifacts:
     paths:
       - public
