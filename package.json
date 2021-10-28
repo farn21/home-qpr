@@ -9,9 +9,11 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
+    "@sveltejs/adapter-node": "^1.0.0-next.55",
     "@sveltejs/adapter-static": "^1.0.0-next.20",
     "@sveltejs/kit": "next",
     "@types/cookie": "^0.4.1",
+    "node": "^17.0.1",
     "svelte": "^3.34.0",
     "svelte-check": "^2.2.6",
     "svelte-preprocess": "^4.9.4",
