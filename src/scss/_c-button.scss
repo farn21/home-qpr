@@ -10,7 +10,7 @@
    ========================================================================== */
 
 // Border radius
-$c-button-border-radius: 0.3rem !default;
+$c-button-border-radius: 28px !default;
 
 // Sizes (heights)
 
@@ -19,7 +19,7 @@ $c-button-height-small: 3.2rem !default;
 
 // Font size
 
-$c-button-font-size: 1.6rem;
+$c-button-font-size: 14px;
 $c-button-font-size-small: 1.3rem;
 
 // Line height
@@ -53,7 +53,9 @@ $c-button-icon-spacing-small: 0 !default;
   text-align: center;
   display: inline-flex;
   align-items: center;
-  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 700;
 }
 
 a.c-button {

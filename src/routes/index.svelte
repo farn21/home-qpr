@@ -26,7 +26,7 @@
 	:global(.container, .botonera){
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;
 	}
 
@@ -45,7 +45,7 @@
 	.c-h2{
 		font-size: 3.4rem;
 	}
-
+	
 	.info-home{
 		border-left: 4px solid #c1bcbc;
     	padding-left: 10px;
@@ -64,29 +64,69 @@
 		margin: 0;
 	}
 
+	.main-logo{
+		margin-top: 4em;
+		margin-bottom: 70px;
+	}
+	
 	.ingreso{
-		border: 1px solid gray;
+		background-color: #ffffff;
+		padding: 18px;
+		padding-top: 22px;
+		height: 460px;
+		width: 440px;
 	}
 
-	.ingreso .text{
-		top: -15px;
-		position: relative;
-		left: 15px;
-		background-color: white;
-		padding: 11px;
+	.title{
 		font-size: 18px;
 		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		margin-top: 35px;
+		margin-bottom: 25px;
 	}
 
-	.ingreso .botonera{
+	.botonera{
 		margin: 4em;
+		margin-top: 1em;
+	}
+	
+	.card-button-container{
+		margin-top: 0;
+	}
+	
+	.gradient-background{
+		background: rgb(161,205,231);
+		background: linear-gradient(153deg, rgba(161,205,231,1) 0%, rgba(162,186,145,1) 48%, rgba(239,204,90,1) 100%);
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.logo-container{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 30px;
+		border-bottom: 2px solid #aeadb3;
+	}
+	
+	.card-logo{
+	width: 160px;
+	align-self: center;
+	
 	}
 
 </style>
   
 <div class='container'>
 	{#if home}
-		<img src='/images/Logo QPR_1.png' alt='logo QPR' />
+		<img class='main-logo' src='/images/Logo QPR_1.png' alt='logo QPR' />
 	
 		<div class="botonera">
 			<Button 
@@ -108,11 +148,15 @@
 	{/if}
 
 	{#if first_time}
+	<div class="gradient-background">
 		<div class='ingreso'>
-			<span class='text'>Ingreso como</span>
-			<div class="botonera">
+			<div class='logo-container'>
+				<img class='card-logo' src='/images/Logo QPR_1.png' alt='logo QPR' />
+			</div>
+			<p class='title'>Ingreso como</p>
+			<div class="botonera card-button-container">
 				<Button 
-					skin="primary"
+					skin="tertiary"
 					on:click={()=>{
 						first_time=false;
 						vecino_cuenca_matanza_riachuelo = true;
@@ -121,7 +165,7 @@
 					Vecino de la cuenca Matanza-Riachuelo
 				</Button>
 				<Button 
-					skin="primary"
+					skin="tertiary"
 					on:click={()=>{
 						first_time=false;
 						integrante_comunidad_educativa = true;
@@ -130,7 +174,7 @@
 					Integrante de la comunidad educativa
 				</Button>
 				<Button  
-					skin="primary"
+					skin="tertiary"
 					on:click={()=>{
 						first_time=false;
 						integrante_comunidad_cientifica = true;
@@ -139,7 +183,7 @@
 					Integrante de la Comunidad Cientifica
 				</Button>
 				<Button  
-					skin="primary"
+					skin="tertiary"
 					on:click={()=>{
 						first_time=false;
 						funcionario_publico = true;
@@ -148,6 +192,7 @@
 					Funcionario publico
 				</Button>
 			</div>
+		</div>
 		</div>
 	{/if}
 
