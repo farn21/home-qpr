@@ -12,7 +12,7 @@
 
 <svelte:head>
 	{#if home}
-		<title>Home</title>
+		<title>¿Qué pasa, Riachuelo?</title>
 	{/if}
 	{#if first_time}
 		<title>Ingreso por primera vez</title>
@@ -86,11 +86,8 @@
   
 <div class='container'>
 	{#if home}
-		<h1 class='c-h1'>¿Qué pasa, Riachuelo?</h1>
-		<div class='info-home'>
-			<h3 class='c-h3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit integer.</h3>
-			<span>- Lorem ipsum</span>
-		</div>
+		<img src='/images/Logo QPR_1.png' alt='logo QPR' />
+	
 		<div class="botonera">
 			<Button 
 				skin="primary"
@@ -102,7 +99,7 @@
 				Ingreso por primera vez
 			</Button>
 			<Button 
-				skin="primary"
+				skin="secondary uppercase"
 				href='https://quepasa.mapseed.org'
 			>
 				Ingreso al mapa
