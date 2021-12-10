@@ -176,6 +176,26 @@
 		font-size: 11px;
 		font-weight: 700;
 	}
+	
+	@media (min-width: 320px) {
+		.user-type-card, .ingreso{width: 300px;}
+		.user-type-card{padding: 10px;}
+		.vertical-scroll{
+			padding-top: 380px;
+		}
+		.main-logo{width: 80%;}
+		.c-h2{
+		font-size:1.8rem;
+		margin-left: 10px;
+		}
+	}
+	@media (min-width: 480px) {
+		.user-type-card, .ingreso{width: 80%;}
+		.vertical-scroll{
+			padding-top: 400px;
+		}
+		.main-logo{width: 60%;}
+	}
 
 </style>
   
@@ -278,6 +298,7 @@
 			</div>
 			<div class="botonera">
 				<Button 
+				class='mobile-button'
 					skin="secondary-white"
 					href='https://quepasa.mapseed.org'
 				>
