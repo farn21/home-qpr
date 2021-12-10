@@ -43,7 +43,11 @@
 	}
 
 	.c-h2{
-		font-size: 3.4rem;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		margin: 0;
 	}
 	
 	.info-home{
@@ -107,19 +111,70 @@
 		align-items: center;
 	}
 	
+	.vertical-scroll{
+		overflow-y: scroll;
+		padding-top: 200px;
+	}
+	.user-type-card{
+		background-color: #ffffff;
+		padding: 45px;
+		padding-top: 22px;
+		width: 800px;
+	}
+	
 	.logo-container{
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		padding-bottom: 30px;
-		border-bottom: 2px solid #aeadb3;
+		border-bottom: 1px solid #aeadb3;
 	}
 	
 	.card-logo{
-	width: 160px;
-	align-self: center;
+		width: 160px;
+		align-self: center;
+	}
 	
+	.card-header{
+		background-color: transparent;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	.card-header-title{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: transparent;
+		padding: 0;
+	}
+	
+	.card-body{
+		border: 1px solid #D9D9D9;
+		border-radius: 10px;
+		margin-top: 15px;
+	}
+	
+	.icon-container{
+	display: inline-block;
+	}
+	
+	.card-icon{
+	margin: 15px;
+	margin-left: 0;
+	width: 50px;
+	}
+	
+	.regular-text{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 11px;
+		padding-bottom: 10px;
+	}
+	
+	.bold-text{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 11px;
+		font-weight: 700;
 	}
 
 </style>
@@ -162,7 +217,7 @@
 						vecino_cuenca_matanza_riachuelo = true;
 					}}
 				>
-					Vecino de la cuenca Matanza-Riachuelo
+					Habitante u organización de la Cuenca
 				</Button>
 				<Button 
 					skin="tertiary"
@@ -171,7 +226,7 @@
 						integrante_comunidad_educativa = true;
 					}}
 				>
-					Integrante de la comunidad educativa
+					Comunidad educativa
 				</Button>
 				<Button  
 					skin="tertiary"
@@ -180,7 +235,7 @@
 						integrante_comunidad_cientifica = true;
 					}}
 				>
-					Integrante de la Comunidad Cientifica
+					Comunidad científica
 				</Button>
 				<Button  
 					skin="tertiary"
@@ -189,7 +244,7 @@
 						funcionario_publico = true;
 					}}
 				>
-					Funcionario publico
+					Gobierno - Agente de Gobierno
 				</Button>
 			</div>
 		</div>
@@ -197,28 +252,43 @@
 	{/if}
 
 	{#if vecino_cuenca_matanza_riachuelo}
-		<h1 class='c-h2'>Vecino de la cuenca Matanza-Riachuelo</h1>
-		<div class='info-no-home'>
-			<div>
-				<h4 class='c-h4'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit integer.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit integer.
-				</h4>
+		<div class="gradient-background vertical-scroll">
+			<div class='user-type-card'>
+				<div class='logo-container'>
+						<img class='card-logo' src='/images/Logo QPR_1.png' alt='logo QPR' />
+				</div>
+				<div class='card-header'>	
+					<div class='card-header-title'>	
+						<div class='icon-container'>
+							<img class='card-icon' src='/icons/Asset_community.png' alt='ícono habitante' />
+						</div>
+						<h1 class='c-h2'>Habitante u organización de la Cuenca</h1>
+					</div>
+					<p class='regular-text'>Querés mejorar / transformar la cuenca para el beneficio de todos/para vivir en espacio/barrios más saludables e inclusivos.</p>
+				</div>
+				<p class='bold-text'>Accedé a información pública y generá nuevo conocimiento sobre hábitat, vivienda, calidad de agua y conservación de áreas naturales. Compartí tu experiencia y actividades. Sumate a redes de actores que comparten intereses afines.</p>
+				<div class='card-body'>
+					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
+					<p class='regular-text'>· Podés reportar sobre calidad de agua, procesos de relocalizaciones de familias y actividades de conservación de áreas naturales.</p>
+					<p class='regular-text'>· Podés conocer más sobre el patrimonio biológico y cultural de la CMR.</p>
+					<p class='regular-text'>· Podés conocer experiencias participativas para conocer y transformar la cuenca.</p>
+					<p class='regular-text'>· Podés conocer resultados de investigaciones científicas sobre los temas que te interesan.</p>
+					<p class='regular-text'>· Podés generar redes y articular con actores con intereses afines.</p>
+				</div>
 			</div>
-			<img src="https://via.placeholder.com/150" alt="p">
-		</div>
-		<div class="botonera">
-			<Button 
-				skin="primary"
-				href='https://quepasa.mapseed.org'
-			>
-				Ingreso al mapa
-			</Button>
+			<div class="botonera">
+				<Button 
+					skin="secondary-white"
+					href='https://quepasa.mapseed.org'
+				>
+					Ingreso al mapa
+				</Button>
+			</div>
 		</div>
 	{/if}
 
 	{#if integrante_comunidad_educativa}
-		<h1 class='c-h2'>Integrante de la comunidad educativa</h1>
+		<h1 class='c-h2'>Comunidad educativa</h1>
 		<div class='info-no-home'>
 			<div>
 				<h4 class='c-h4'>
@@ -230,7 +300,7 @@
 		</div>
 		<div class="botonera">
 			<Button 
-				skin="primary"
+				skin="secondary"
 				href='https://quepasa.mapseed.org'
 			>
 				Ingreso al mapa
@@ -239,7 +309,7 @@
 	{/if}
 
 	{#if integrante_comunidad_cientifica}
-		<h1 class='c-h2'>Integrante de la comunidad cientifica</h1>
+		<h1 class='c-h2'>Comunidad científica</h1>
 		<div class='info-no-home'>
 			<div>
 				<h4 class='c-h4'>
@@ -251,7 +321,7 @@
 		</div>
 		<div class="botonera">
 			<Button 
-				skin="primary"
+				skin="secondary"
 				href='https://quepasa.mapseed.org'
 			>
 				Ingreso al mapa
@@ -260,7 +330,7 @@
 	{/if}
 
 	{#if funcionario_publico}
-		<h1 class='c-h2'>Funcionario publico</h1>
+		<h1 class='c-h2'>Gobierno - Agente de Gobierno</h1>
 		<div class='info-no-home'>
 			<div>
 				<h4 class='c-h4'>
@@ -272,7 +342,7 @@
 		</div>
 		<div class="botonera">
 			<Button 
-				skin="primary"
+				skin="secondary"
 				href='https://quepasa.mapseed.org'
 			>
 				Ingreso al mapa
