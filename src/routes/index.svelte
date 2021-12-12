@@ -181,6 +181,9 @@
 		margin-top: 100px;
 		padding: 10px;
 		}
+		.education-card,.government-card{margin-top: 130px;}
+		
+		.science-card{margin-top: 190px;}
 		.gradient-background{
 			overflow-y: scroll;
 		}
@@ -204,6 +207,8 @@
 		}
 		
 		.main-logo{width: 60%;}
+		
+		.science-card{margin-top: 160px;}
 	}
 	
 	@media (min-width:768px) {
@@ -214,6 +219,8 @@
 	.gradient-background{
 		overflow-y: scroll;
 	}
+	
+	.science-card{margin-top: 200px;}
 	}
 	
 	@media (min-width:1024px){
@@ -333,66 +340,101 @@
 	{/if}
 
 	{#if integrante_comunidad_educativa}
-		<h1 class='c-h2'>Comunidad educativa</h1>
-		<div class='info-no-home'>
-			<div>
-				<h4 class='c-h4'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit integer.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit integer.
-				</h4>
+		<div class="gradient-background">
+			<div class='user-type-card education-card'>
+				<div class='logo-container'>
+						<img class='card-logo' src='/images/Logo QPR_1.png' alt='logo QPR' />
+				</div>
+				<div class='card-header'>	
+					<div class='card-header-title'>	
+						<div class='icon-container'>
+							<img class='card-icon' src='/icons/Asset_education.png' alt='ícono comunidad educativa' />
+						</div>
+						<h1 class='c-h2'>Comunidad educativa</h1>
+					</div>
+				</div>
+				<p class='bold-text'>Querés concientizar sobre la importancia de cuidar el medio ambiente y llevar adelante acciones pedagógicas para valorar los recursos bio-culturales de la cuenca.</p>
+				<div class='card-body'>
+					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
+					<p class='regular-text'>· Podés poner en práctica algunos principios de la Ley de Educación Ambiental como la participación y formación ciudadana y el cuidado del patrimonio natural y cultural.</p>
+					<p class='regular-text'>· Podés organizar salidas didácticas y contribuir a generar datos sobre estos temas.</p>
+					</div>
 			</div>
-			<img src="https://via.placeholder.com/150" alt="p">
-		</div>
-		<div class="botonera">
-			<Button 
-				skin="secondary"
-				href='https://quepasa.mapseed.org'
-			>
-				Ingreso al mapa
-			</Button>
+			<div class="botonera">
+				<Button 
+				class='mobile-button'
+					skin="secondary-white"
+					href='https://quepasa.mapseed.org'
+				>
+					Ingreso al mapa
+				</Button>
+			</div>
 		</div>
 	{/if}
 
 	{#if integrante_comunidad_cientifica}
-		<h1 class='c-h2'>Comunidad científica</h1>
-		<div class='info-no-home'>
-			<div>
-				<h4 class='c-h4'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit integer.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit integer.
-				</h4>
+		<div class="gradient-background">
+			<div class='user-type-card science-card'>
+				<div class='logo-container'>
+						<img class='card-logo' src='/images/Logo QPR_1.png' alt='logo QPR' />
+				</div>
+				<div class='card-header'>	
+					<div class='card-header-title'>	
+						<div class='icon-container'>
+							<img class='card-icon' src='/icons/Asset_science.png' alt='ícono comunidad científica' />
+						</div>
+						<h1 class='c-h2'>Comunidad científica</h1>
+					</div>
+				</div>
+				<p class='bold-text'>Investigás sobre temáticas socio-ambientales y querés que tu trabajo tenga impacto en el bien común. Tenés experiencia en investigación ciudadana/comunitaria/participativa o te gustaría tenerla.</p>
+				<div class='card-body'>
+					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
+					<p class='regular-text'>· Podés encontrar información generada por ciudadanos sobre hábitat, vivienda, calidad del agua, procesos de relocalización de familias y actividades de conservación de áreas naturales.</p>
+					<p class='regular-text'>· Podés conocer experiencias de producción de conocimiento participativo, comunitario, ciudadano y encontrar herramientas para poder iniciar un nuevo proyecto de ciencia social ciudadana.</p>
+					</div>
 			</div>
-			<img src="https://via.placeholder.com/150" alt="p">
-		</div>
-		<div class="botonera">
-			<Button 
-				skin="secondary"
-				href='https://quepasa.mapseed.org'
-			>
-				Ingreso al mapa
-			</Button>
+			<div class="botonera">
+				<Button 
+				class='mobile-button'
+					skin="secondary-white"
+					href='https://quepasa.mapseed.org'
+				>
+					Ingreso al mapa
+				</Button>
+			</div>
 		</div>
 	{/if}
 
 	{#if funcionario_publico}
-		<h1 class='c-h2'>Gobierno - Agente de Gobierno</h1>
-		<div class='info-no-home'>
-			<div>
-				<h4 class='c-h4'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit integer.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit integer.
-				</h4>
+		<div class="gradient-background">
+			<div class='user-type-card government-card'>
+				<div class='logo-container'>
+						<img class='card-logo' src='/images/Logo QPR_1.png' alt='logo QPR' />
+				</div>
+				<div class='card-header'>	
+					<div class='card-header-title'>	
+						<div class='icon-container'>
+							<img class='card-icon' src='/icons/Asset_government.png' alt='ícono agente de gobierno' />
+						</div>
+						<h1 class='c-h2'>Gobierno - Agente de Gobierno</h1>
+					</div>
+				</div>
+				<p class='bold-text'>Trabajás en el gobierno municipal, provincial o nacional y querés contribuir con acciones transformadoras para la justicia ambiental de la cuenca.</p>
+				<div class='card-body'>
+					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
+					<p class='regular-text'>· Podés conocer qué piensa la ciudadanía sobre hábitat, vivienda, calidad de agua, procesos de relocalización de familias y actividades de conservación de áreas naturales</p>
+					<p class='regular-text'>· Podés compartir información pública de tu área.</p>
+					</div>
 			</div>
-			<img src="https://via.placeholder.com/150" alt="p">
-		</div>
-		<div class="botonera">
-			<Button 
-				skin="secondary"
-				href='https://quepasa.mapseed.org'
-			>
-				Ingreso al mapa
-			</Button>
+			<div class="botonera">
+				<Button 
+				class='mobile-button'
+					skin="secondary-white"
+					href='https://quepasa.mapseed.org'
+				>
+					Ingreso al mapa
+				</Button>
+			</div>
 		</div>
 	{/if}
-
 </div>
