@@ -38,10 +38,6 @@
 		display: flex;
 	}
 
-	.c-h1{
-		font-size: 6.2rem;
-	}
-
 	.c-h2{
 		font-size: 2.2rem;
 		text-transform: uppercase;
@@ -49,25 +45,6 @@
 		font-weight: 700;
 		margin: 0;
 	}
-	
-	.info-home{
-		border-left: 4px solid #c1bcbc;
-    	padding-left: 10px;
-	}
-
-	.info-no-home{
-		display: flex;
-	}
-
-	.info-no-home div{
-		width: 35em;
-		padding-right: 5em;
-	}
-	
-	.info-home .c-h3{
-		margin: 0;
-	}
-
 	.main-logo{
 		margin-top: 4em;
 		margin-bottom: 70px;
