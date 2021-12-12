@@ -71,14 +71,15 @@
 	.main-logo{
 		margin-top: 4em;
 		margin-bottom: 70px;
+		max-width: 350px;
 	}
 	
 	.ingreso{
 		background-color: #ffffff;
 		padding: 18px;
 		padding-top: 22px;
-		height: 460px;
-		width: 440px;
+		max-height: 460px;
+		max-width: 440px;
 	}
 
 	.title{
@@ -92,7 +93,7 @@
 	}
 
 	.botonera{
-		margin: 4em;
+		margin: 1em;
 		margin-top: 1em;
 	}
 	
@@ -111,15 +112,12 @@
 		align-items: center;
 	}
 	
-	.vertical-scroll{
-		overflow-y: scroll;
-		padding-top: 200px;
-	}
 	.user-type-card{
 		background-color: #ffffff;
-		padding: 45px;
+		box-sizing: border-box;
 		padding-top: 22px;
-		width: 800px;
+		padding-bottom: 22px;
+		max-width: 760px;
 	}
 	
 	.logo-container{
@@ -179,22 +177,52 @@
 	
 	@media (min-width: 320px) {
 		.user-type-card, .ingreso{width: 300px;}
-		.user-type-card{padding: 10px;}
-		.vertical-scroll{
-			padding-top: 380px;
+		.user-type-card{
+		margin-top: 100px;
+		padding: 10px;
+		}
+		.gradient-background{
+			overflow-y: scroll;
 		}
 		.main-logo{width: 80%;}
 		.c-h2{
 		font-size:1.8rem;
 		margin-left: 10px;
 		}
+		:global(.botonera button, .botonera a){
+		width: 21em;
+	}
 	}
 	@media (min-width: 480px) {
-		.user-type-card, .ingreso{width: 80%;}
-		.vertical-scroll{
-			padding-top: 400px;
+		.user-type-card, .ingreso{
+		width: 80%;
 		}
+		
+		.user-type-card{margin-top: 120px}
+		.gradient-background{
+			overflow-y: scroll;
+		}
+		
 		.main-logo{width: 60%;}
+	}
+	
+	@media (min-width:768px) {
+	.user-type-card{
+		padding: 45px;
+		margin-top: 100px;
+		}
+	.gradient-background{
+		overflow-y: scroll;
+	}
+	}
+	
+	@media (min-width:1024px){
+		.gradient-background{
+			overflow: hidden;
+		padding: 0;
+		}
+		
+		.user-type-card{margin-top: 40px}
 	}
 
 </style>
@@ -272,7 +300,7 @@
 	{/if}
 
 	{#if vecino_cuenca_matanza_riachuelo}
-		<div class="gradient-background vertical-scroll">
+		<div class="gradient-background">
 			<div class='user-type-card'>
 				<div class='logo-container'>
 						<img class='card-logo' src='/images/Logo QPR_1.png' alt='logo QPR' />
@@ -284,17 +312,13 @@
 						</div>
 						<h1 class='c-h2'>Habitante u organización de la Cuenca</h1>
 					</div>
-					<p class='regular-text'>Querés mejorar / transformar la cuenca para el beneficio de todos/para vivir en espacio/barrios más saludables e inclusivos.</p>
 				</div>
-				<p class='bold-text'>Accedé a información pública y generá nuevo conocimiento sobre hábitat, vivienda, calidad de agua y conservación de áreas naturales. Compartí tu experiencia y actividades. Sumate a redes de actores que comparten intereses afines.</p>
+				<p class='bold-text'>Querés mejorar / transformar la cuenca para el beneficio de todos/para vivir en espacio/barrios más saludables e inclusivos.</p>
 				<div class='card-body'>
 					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
-					<p class='regular-text'>· Podés reportar sobre calidad de agua, procesos de relocalizaciones de familias y actividades de conservación de áreas naturales.</p>
-					<p class='regular-text'>· Podés conocer más sobre el patrimonio biológico y cultural de la CMR.</p>
-					<p class='regular-text'>· Podés conocer experiencias participativas para conocer y transformar la cuenca.</p>
-					<p class='regular-text'>· Podés conocer resultados de investigaciones científicas sobre los temas que te interesan.</p>
-					<p class='regular-text'>· Podés generar redes y articular con actores con intereses afines.</p>
-				</div>
+					<p class='regular-text'>· Podés compartir tu experiencia sobre calidad de agua, procesos de relocalizaciones de familias y actividades de conservación de áreas naturales.</p>
+					<p class='regular-text'>· Podés conocer experiencias participativas para conocer y transformar la cuenca</p>
+					</div>
 			</div>
 			<div class="botonera">
 				<Button 
