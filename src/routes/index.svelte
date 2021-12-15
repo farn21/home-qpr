@@ -23,6 +23,11 @@
 	:global(html, body, #svelte, main, .container){
 		height: 100%;
 	}
+	
+	:global(body.dark-mode) {
+		background-color: #ffffff;
+		color: #000000;
+	}
 	:global(.container, .botonera){
 		display: flex;
 		flex-direction: column;
@@ -153,18 +158,17 @@
 	}
 	
 	@media (min-width: 320px) {
-		.user-type-card, .ingreso{width: 300px;}
+		.user-type-card, .ingreso{width: 90%;}
 		.user-type-card{
-		margin-top: 100px;
+		margin-top: 30px;
 		padding: 10px;
 		}
-		.education-card,.government-card{margin-top: 130px;}
-		
-		.science-card{margin-top: 190px;}
+		.science-card{margin-top: 50px;} 
 		.gradient-background{
 			overflow-y: scroll;
 		}
-		.main-logo{width: 80%;}
+		.main-logo{width: 70%;}
+		.card-icon{width: 30px;}
 		.c-h2{
 		font-size:1.8rem;
 		margin-left: 10px;
@@ -208,6 +212,8 @@
 		
 		.user-type-card{margin-top: 40px}
 	}
+	
+
 
 </style>
   
