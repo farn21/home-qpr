@@ -282,7 +282,7 @@
 						funcionario_publico = true;
 					}}
 				>
-					Gobierno - Agente de Gobierno
+					Gobierno 
 				</Button>
 			</div>
 		</div>
@@ -399,7 +399,7 @@
 						<div class='icon-container'>
 							<img class='card-icon' src='/icons/Asset_government.png' alt='ícono agente de gobierno' />
 						</div>
-						<h1 class='c-h2'>Gobierno - Agente de Gobierno</h1>
+						<h1 class='c-h2'>Gobierno</h1>
 					</div>
 				</div>
 				<p class='bold-text'>Trabajás en el gobierno municipal, provincial o nacional y querés contribuir con acciones transformadoras para la justicia ambiental de la cuenca.</p>
