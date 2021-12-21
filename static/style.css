@@ -1,50 +1,45 @@
-	html, body, #svelte, main, .container{
+html, body, #svelte, main, .container{
 		height: 100%;
-	}
+}
 
-	body.dark-mode {
-		background-color: #ffffff;
-		color: #000000;
-	}
-
-	.container, .botonera{
+.container, .botonera{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
+}
 
-	.botonera button, .botonera a{
+.botonera button, .botonera a{
 		margin-bottom: 1em;
 		width: 25em;
 		height: 4em;
 		justify-content: center;
 		display: flex;
-	}
+}
 
-	.c-h2{
+.c-h2{
 		font-size: 2.2rem;
 		text-transform: uppercase;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		margin: 0;
-	}
+}
 
-	.main-logo{
+.main-logo{
 		margin-top: 4em;
 		margin-bottom: 70px;
 		max-width: 350px;
-	}
+}
 
-	.ingreso{
+.ingreso{
 		background-color: #ffffff;
 		padding: 18px;
 		padding-top: 22px;
 		max-height: 460px;
 		max-width: 440px;
-	}
+}
 
-	.title{
+.title{
 		font-size: 18px;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -52,18 +47,18 @@
 		font-family: 'Montserrat', sans-serif;
 		margin-top: 35px;
 		margin-bottom: 25px;
-	}
+}
 
-	.botonera{
+.botonera{
 		margin: 1em;
 		margin-top: 1em;
-	}
+}
 
-	.card-button-container{
+.card-button-container{
 		margin-top: 0;
-	}
+}
 
-	.gradient-background{
+.gradient-background{
 		background: rgb(161,205,231);
 		background: linear-gradient(153deg, rgba(161,205,231,1) 0%, rgba(162,186,145,1) 48%, rgba(239,204,90,1) 100%);
 		width: 100vw;
@@ -72,123 +67,125 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
+}
 
-	.user-type-card{
+.user-type-card{
 		background-color: #ffffff;
 		box-sizing: border-box;
 		padding-top: 22px;
 		padding-bottom: 22px;
 		max-width: 760px;
-	}
+}
 
-	.logo-container{
+.logo-container{
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		padding-bottom: 30px;
 		border-bottom: 1px solid #aeadb3;
-	}
+}
 
-	.card-logo{
+.card-logo{
 		width: 160px;
 		align-self: center;
-	}
+}
 
-	.card-header{
+.card-header{
 		background-color: transparent;
 		padding: 0;
 		margin-bottom: 10px;
-	}
-	.card-header-title{
+}
+
+.card-header-title{
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 		background-color: transparent;
 		padding: 0;
-	}
+}
 
-	.card-body{
+.card-body{
 		border: 1px solid #D9D9D9;
 		border-radius: 10px;
 		margin-top: 15px;
-	}
+}
 
-	.icon-container{
+.icon-container{
 	display: inline-block;
-	}
+}
 
-	.card-icon{
+.card-icon{
 	margin: 15px;
 	margin-left: 0;
 	width: 50px;
-	}
+}
 
-	.regular-text{
+.regular-text{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 11px;
 		padding-bottom: 10px;
-	}
+}
 
-	.bold-text{
+.bold-text{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 11px;
 		font-weight: 700;
-	}
+}
 
-	@media (min-width: 320px) {
+@media (min-width: 320px) {
 		.user-type-card, .ingreso{width: 90%;}
 		.user-type-card{
-		margin-top: 30px;
-		padding: 10px;
+		    margin-top: 30px;
+		    padding: 10px;
 		}
 		.science-card{margin-top: 50px;} 
 		.gradient-background{
-			overflow-y: scroll;
+			  overflow-y: scroll;
 		}
 		.main-logo{width: 70%;}
 		.card-icon{width: 30px;}
 		.c-h2{
-		font-size:1.8rem;
-		margin-left: 10px;
+		    font-size:1.8rem;
+		    margin-left: 10px;
 		}
 		:global(.botonera button, .botonera a){
-		width: 21em;
-	}
-	}
-	@media (min-width: 480px) {
+		    width: 21em;
+	  }
+}
+
+@media (min-width: 480px) {
 		.user-type-card, .ingreso{
-		width: 80%;
+		    width: 80%;
 		}
 
 		.user-type-card{margin-top: 120px}
 		.gradient-background{
-			overflow-y: scroll;
+			  overflow-y: scroll;
 		}
 
 		.main-logo{width: 60%;}
 
 		.science-card{margin-top: 160px;}
-	}
+}
 
-	@media (min-width:768px) {
-	.user-type-card{
-		padding: 45px;
-		margin-top: 100px;
+@media (min-width:768px) {
+	  .user-type-card{
+		    padding: 45px;
+		    margin-top: 100px;
 		}
-	.gradient-background{
-		overflow-y: scroll;
-	}
+	  .gradient-background{
+		    overflow-y: scroll;
+	  }
 
-	.science-card{margin-top: 200px;}
-	}
+	  .science-card{margin-top: 200px;}
+}
 
-	@media (min-width:1024px){
+@media (min-width:1024px){
 		.gradient-background{
-			overflow: hidden;
-		padding: 0;
+			  overflow: hidden;
+		    padding: 0;
 		}
 
 		.user-type-card{margin-top: 40px}
-	}
+}
