@@ -1,0 +1,43 @@
+<script>
+  import Button from '$lib/jui-components/Button.svelte';
+  import { goto } from '$app/navigation';
+</script>
+
+<svelte:head>
+		<title>Ingreso por primera vez</title>
+</svelte:head>
+
+<div class='container'>
+
+		<div class="gradient-background">
+			<div class='user-type-card'>
+				<div class='logo-container'>
+						<img class='card-logo' src='/images/Logo QPR_1.png' alt='logo QPR' />
+				</div>
+				<div class='card-header'>
+					<div class='card-header-title'>
+						<div class='icon-container'>
+							<img class='card-icon' src='/icons/Asset_community.png' alt='ícono habitante' />
+						</div>
+						<h1 class='c-h2'>Habitante u organización de la Cuenca</h1>
+					</div>
+				</div>
+				<p class='bold-text'>Querés mejorar / transformar la cuenca para el beneficio de todos/para vivir en espacio/barrios más saludables e inclusivos.</p>
+				<div class='card-body'>
+					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
+					<p class='regular-text'>· Podés compartir tu experiencia sobre calidad de agua, procesos de relocalizaciones de familias y actividades de conservación de áreas naturales.</p>
+					<p class='regular-text'>· Podés conocer experiencias participativas para conocer y transformar la cuenca</p>
+					</div>
+			</div>
+			<div class="botonera">
+				<Button
+				class='mobile-button'
+					skin="secondary-white"
+					href='https://quepasa.mapseed.org'
+				>
+					Ingreso al mapa
+				</Button>
+			</div>
+		</div>
+
+</div>
