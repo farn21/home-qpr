@@ -24,7 +24,7 @@
 				</div>
 				<p class='bold-text'>Querés mejorar / transformar la cuenca para el beneficio de todos/para vivir en espacio/barrios más saludables e inclusivos.</p>
 				<div class='card-body'>
-					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
+					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SINIA.</p>
 					<p class='regular-text'>· Podés compartir tu experiencia sobre calidad de agua, procesos de relocalizaciones de familias y actividades de conservación de áreas naturales.</p>
 					<p class='regular-text'>· Podés conocer experiencias participativas para conocer y transformar la cuenca</p>
 					</div>

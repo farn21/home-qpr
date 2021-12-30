@@ -24,7 +24,7 @@
 				    </div>
 				    <p class='bold-text'>Querés concientizar sobre la importancia de cuidar el medio ambiente y llevar adelante acciones pedagógicas para valorar los recursos bio-culturales de la cuenca.</p>
 				    <div class='card-body'>
-					      <p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
+					      <p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SINIA.</p>
 					      <p class='regular-text'>· Podés poner en práctica algunos principios de la Ley de Educación Ambiental como la participación y formación ciudadana y el cuidado del patrimonio natural y cultural.</p>
 					      <p class='regular-text'>· Podés organizar salidas didácticas y contribuir a generar datos sobre estos temas.</p>
 					  </div>

@@ -22,9 +22,9 @@
 						        <h1 class='c-h2'>Comunidad científica</h1>
 					      </div>
 				    </div>
-				    <p class='bold-text'>Investigás sobre temáticas socio-ambientales y querés que tu trabajo tenga impacto en el bien común. Tenés experiencia en investigación ciudadana/comunitaria/participativa o te gustaría tenerla.</p>
+				    <p class='bold-text'>Investigás sobre temáticas socio-ambientales y querés que tu trabajo tenga impacto en el bien común. Te interesa la investigación ciudadana/comunitaria/participativa.</p>
 				    <div class='card-body'>
-					      <p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
+					      <p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SINIA.</p>
 					      <p class='regular-text'>· Podés encontrar información generada por ciudadanos sobre hábitat, vivienda, calidad del agua, procesos de relocalización de familias y actividades de conservación de áreas naturales.</p>
 					      <p class='regular-text'>· Podés conocer experiencias de producción de conocimiento participativo, comunitario, ciudadano y encontrar herramientas para poder iniciar un nuevo proyecto de ciencia social ciudadana.</p>
 					  </div>

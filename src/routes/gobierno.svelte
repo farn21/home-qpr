@@ -23,7 +23,7 @@
 				</div>
 				<p class='bold-text'>Trabajás en el gobierno municipal, provincial o nacional y querés contribuir con acciones transformadoras para la justicia ambiental de la cuenca.</p>
 				<div class='card-body'>
-					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SiFAP.</p>
+					<p class='regular-text'>· Podés encontrar información pública sobre procesos de protección de áreas naturales, calidad de agua y procesos de relocalización de los barrios, villas y asentamientos producida por ACUMAR, RENABAP, ADA y SINIA.</p>
 					<p class='regular-text'>· Podés conocer qué piensa la ciudadanía sobre hábitat, vivienda, calidad de agua, procesos de relocalización de familias y actividades de conservación de áreas naturales</p>
 					<p class='regular-text'>· Podés compartir información pública de tu área.</p>
 					</div>
