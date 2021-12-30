@@ -21,7 +21,7 @@
 			  </Button>
 			  <Button
 				    skin="secondary uppercase"
-				    href='https://quepasa.mapseed.org'
+				    href="https://mapaqpr.farn.org.ar"
 			  >
 				    Ingreso al mapa
 			  </Button>

@@ -2,6 +2,11 @@ html, body, #svelte, main, .container{
 		height: 100%;
 }
 
+body.dark-mode {
+	background-color: #ffffff;
+	color: #000000;
+}
+
 .container, .botonera{
 		display: flex;
 		flex-direction: column;
