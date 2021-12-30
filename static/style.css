@@ -7,6 +7,8 @@ body.dark-mode {
 	color: #000000;
 }
 
+
+
 .container, .botonera{
 		display: flex;
 		flex-direction: column;
@@ -150,7 +152,21 @@ body.dark-mode {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
+	
 }
+
+@media (prefers-color-scheme: dark) {
+
+body {
+    background: #ffffff !important;
+   
+}
+.c-h1, .c-h2, .c-h3, .c-h4, .c-content h1, .c-content h2, .c-content h3, .c-content h4 {
+	color: #1A1A1A !important;
+}
+}
+
+
 
 @media (min-width: 320px) {
 		.user-type-card, .ingreso{width: 90%;}
