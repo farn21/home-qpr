@@ -33,7 +33,7 @@
 				    <Button
 				        class='mobile-button'
 					      skin="secondary-white"
-					      href='https://quepasa.mapseed.org'
+					      href='https://mapaqpr.farn.org.ar'
 				    >
 					      Ingreso al mapa
 				    </Button>

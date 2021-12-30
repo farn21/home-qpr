@@ -21,7 +21,7 @@
 			  </Button>
 			  <Button
 				    skin="secondary uppercase"
-				    href="https://mapaqpr.farn.org.ar"
+				    href='https://mapaqpr.farn.org.ar'
 			  >
 				    Ingreso al mapa
 			  </Button>
