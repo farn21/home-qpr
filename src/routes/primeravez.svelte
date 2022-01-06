@@ -46,7 +46,7 @@
                              goto('/gobierno')
 					          }}
 				        >
-					          Gobierno
+						Comunidad de política pública
 				        </Button>
 			      </div>
 		    </div>
