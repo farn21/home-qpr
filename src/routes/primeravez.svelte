@@ -22,7 +22,7 @@
                              goto('/vecinocuenca')
 					          }}
 				        >
-					          Habitante u organización de la Cuenca
+					          Habitante u organización de la cuenca
 				        </Button>
 				        <Button
 					          skin="tertiary"
