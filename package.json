@@ -9,9 +9,7 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
-    "@sveltejs/adapter-node": "^1.0.0-next.55",
     "@sveltejs/adapter-static": "^1.0.0-next.21",
-    "@sveltejs/adapter-vercel": "^1.0.0-next.31",
     "@sveltejs/kit": "^1.0.0-next.196",
     "@types/cookie": "^0.4.1",
     "node": "^17.0.1",
