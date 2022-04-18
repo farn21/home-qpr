@@ -13,6 +13,7 @@
 		<div class="botonera">
 			  <Button
 				    skin="primary"
+					style="text-transform: none"
 				    on:click={()=>{
 				      goto('/primeravez')
 				    }}
@@ -20,7 +21,8 @@
 				    Ingreso por primera vez
 			  </Button>
 			  <Button
-				    skin="secondary uppercase"
+				    skin="secondary "
+					style="color: #f0a300; border-color:#f0a300; text-transform: none"
 				    href='https://mapaqpr.farn.org.ar'
 			  >
 				    Ingreso al mapa
