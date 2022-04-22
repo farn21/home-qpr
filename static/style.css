@@ -1,4 +1,4 @@
-html, body, #svelte, main, .container{
+html, body, #svelte, main, .main, .container{
 		height: 100%;
 }
 
@@ -7,12 +7,22 @@ body.dark-mode {
 	color: #000000;
 }
 
+.c-navbar{
+	position: absolute;
+}
 
+.container{
+	padding-top: 40px;
+}
+
+.c-button:hover{
+	color: white !important;
+}
 
 .container, .botonera{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 }
 
@@ -47,18 +57,25 @@ body.dark-mode {
 }
 
 .title{
-		font-size: 18px;
+	font-size: 18px;
 		font-weight: bold;
 		text-transform: uppercase;
-		text-align: center;
+		/* text-align: center; */
 		font-family: 'Montserrat', sans-serif;
 		margin-top: 35px;
 		margin-bottom: 25px;
 }
 
+.navbar-title{
+	text-transform: none;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+	
 .botonera{
-		margin: 1em;
-		margin-top: 1em;
+	margin: 1em;
+	margin-top: 1em;
 }
 
 .card-button-container{
@@ -66,13 +83,13 @@ body.dark-mode {
 }
 
 .gradient-background{
-		background: rgb(161,205,231);
-		background: linear-gradient(153deg, rgba(161,205,231,1) 0%, rgba(162,186,145,1) 48%, rgba(239,204,90,1) 100%);
+		/* background: rgb(161,205,231);
+		background: linear-gradient(153deg, rgba(161,205,231,1) 0%, rgba(162,186,145,1) 48%, rgba(239,204,90,1) 100%); */
 		width: 100vw;
-		height: 100vh;
+		/* height: 100vh; */
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		/* justify-content: center; */
 		align-items: center;
 }
 
@@ -113,13 +130,36 @@ body.dark-mode {
 }
 
 .card-body{
-		border: 1px solid #D9D9D9;
-		border-radius: 10px;
-		margin-top: 15px;
+		margin-top: 25px;
+}
+
+.item-container{
+	position: relative;
+	margin-bottom: 2em;
+}
+
+.circulo {
+	width: 4px;
+	height: 4px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #F0A300;
+	position: absolute;
+	top: 6px;
 }
 
 .icon-container{
 	  display: inline-block;
+}
+
+.nav-icon{
+	width: 10px;
+}
+
+.nav-icon-container{
+	margin-left: 10px;
+	position: absolute;
 }
 
 .card-icon{
@@ -128,16 +168,25 @@ body.dark-mode {
 	  width: 50px;
 }
 
+.next{
+	margin-left: auto;
+}
+
+.icon-next{ width: 10px; margin-left: 20px;}
+
 .regular-text{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 11px;
 		padding-bottom: 10px;
+		text-indent: 10px;
+
 }
 
 .bold-text{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 11px;
 		font-weight: 700;
+		color: #1E252E;
 }
 
 .card-header {
@@ -151,7 +200,7 @@ body.dark-mode {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 1.25rem;
+    /* padding: 1.25rem; */
 	
 }
 
@@ -162,17 +211,17 @@ body {
    
 }
 .c-h1, .c-h2, .c-h3, .c-h4, .c-content h1, .c-content h2, .c-content h3, .c-content h4 {
-	color: #1A1A1A !important;
+	color: #333333 !important;
 }
 }
 
 
 
 @media (min-width: 320px) {
-		.user-type-card, .ingreso{width: 90%;}
+		/* .user-type-card, .ingreso{width: 90%;} */
 		.user-type-card{
-		    margin-top: 30px;
-		    padding: 10px;
+		    /* margin-top: 30px; */
+		    /* padding: 10px; */
 		}
 		.science-card{margin-top: 50px;}
 		.gradient-background{
@@ -180,6 +229,11 @@ body {
 		}
 		.main-logo{width: 70%;}
 		.card-icon{width: 30px;}
+		.nav-icon{width: 10px;}
+		.icon-next{ width: 10px; margin-left: 20px;}
+		.nav-icon-container{
+			margin-left: 25px;
+		}
 		.c-h2{
 		    font-size:1.8rem !important;
 		    margin-left: 10px !important;
